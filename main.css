@@ -1,0 +1,49 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(22, 27, 27);
+    animation: changeBgColor 5s infinite;
+    -webkit-animation: changeBgColor 30s infinite;
+}
+@keyframes changeBgColor {
+    0% {background-color: rgb(242, 71, 71);}
+    10% {background-color: rgb(72, 28, 28);}
+    20% {background-color: rgb(206, 38, 38);}
+    30% {background-color: rgb(254, 207, 0);}
+    40% {background-color: rgb(84, 255, 4);}
+    50% {background-color: rgb(0, 255, 208);}
+    60% {background-color: rgb(0, 81, 255);}
+    70% {background-color: rgb(34, 0, 255);}
+    80% {background-color: rgb(255, 0, 230);}
+    90% {background-color: rgb(240, 28, 78);}
+    100% {background-color: rgb(251, 118, 82);}
+}
+.clock {
+    background-color: black;
+    padding: 30px;
+    border-radius: 8px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.copyright {
+    position: fixed;
+    left: 50%;
+    bottom: 0;
+    width: 265px;
+    transform: translateX(-50%);
+    background-color: black;
+    color: white;
+    padding: 5px 10px;
+    letter-spacing: 1px;
+    z-index: 55;
+    text-align: center;
+}
